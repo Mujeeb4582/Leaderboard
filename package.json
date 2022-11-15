@@ -1,0 +1,33 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "description": "The leaderboard web app displays the top scoring player on the fictional game of life. It also allows any player to submit their score.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "server": "node server.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mujeeb4582/Leaderboard.git"
+  },
+  "keywords": [],
+  "author": "Mujeeb ur Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mujeeb4582/Leaderboard/issues"
+  },
+  "homepage": "https://github.com/Mujeeb4582/Leaderboard#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.75.0"
+  }
+}
