@@ -51,6 +51,7 @@ main {
   width: 85%;
   justify-content: center;
   margin-top: 20px;
+  column-gap: 24px;
 }
 
 main section {
@@ -64,7 +65,8 @@ main section .heading-wrapper {
   align-items: center;
 }
 
-main section .heading-wrapper h2 {
+main section .heading-wrapper h2,
+main form h2 {
   font-size: 2.4rem;
 }
 
@@ -114,4 +116,32 @@ main section table td {
 
 main section table td:nth-child(1) {
   width: 65%
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+main form h2 {
+  margin-bottom: 40px;
+}
+
+main form input {
+  margin: 12px 0;
+  width: 60%;
+  padding: 12px;
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+main form input:focus {
+  background-color: #2d3c42;
+  color: #fff;
 }
