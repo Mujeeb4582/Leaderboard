@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+  color: #fff;
+}
+
+/* styling for scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2d3c42;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 90%;
+  margin-top: 40px;
+  border-bottom: 3px solid;
+}
+
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 85%;
+  justify-content: center;
+  margin-top: 20px;
+  column-gap: 24px;
+}
+
+main section {
+  width: 100%;
+}
+
+main section .heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+main form h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+main form h2,
+main section .heading-wrapper h2 {
+  font-size: 2.4rem;
+}
+
+main section .heading-wrapper .refresh,
+main form .addDetails {
+  background-color: #36b37e;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0.5px 3px #000;
+  cursor: pointer;
+}
+
+main section .heading-wrapper .refresh:hover,
+main form .addDetails:hover {
+  transition: linear 0.4s;
+  transform: scale(1.1);
+}
+
+main section .table-wrapper {
+  height: 350px;
+  overflow-y: scroll;
+  margin-top: 20px;
+  box-shadow: 0 12px 16px #000;
+  border-radius: 8px;
+}
+
+main section table {
+  border: 2px solid;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+main section table tr {
+  background-color: #524797;
+}
+
+main section table td {
+  padding: 12px;
+  text-align: left;
+  font-size: 1.3rem;
+  word-break: break-all;
+}
+
+main section table td:nth-child(1) {
+  width: 65%;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+main form input {
+  margin: 12px 0;
+  width: 60%;
+  padding: 12px;
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+main form input:focus {
+  background-color: #2d3c42;
+  color: #fff;
+}
+
+main form .button-wrapper {
+  width: 65%;
+  margin-top: 12px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main form {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  main form h2 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+  }
+
+  main section .heading-wrapper h2 {
+    font-size: 1.8rem;
+  }
+}

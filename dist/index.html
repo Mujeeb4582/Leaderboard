@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeaderBoard</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <h1>LeaderBoard</h1>
+    </header>
+    <main>
+      <section>
+        <div class="heading-wrapper">
+          <h2>Recent score</h2>
+          <button type="button" class="refresh">Refresh</button>
+        </div>
+        <div class="table-wrapper">
+          <!-- table will inject by JavaScript -->
+        </div>
+      </section>
+      <form action="" id="form">
+        <h2>Add your score</h2>
+        <input
+          type="text"
+          name="playerName"
+          placeholder="Your name..."
+          class="player"
+          required />
+        <input
+          type="number"
+          name="playerScore"
+          class="score"
+          placeholder="Your score..."
+          required />
+        <div class="button-wrapper">
+          <button type="submit" class="addDetails">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
