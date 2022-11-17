@@ -1,7 +1,14 @@
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet) ![HTML](https://img.shields.io/badge/-HTML-orange) ![CSS](https://img.shields.io/badge/-CSS-blue) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
 
 # Leaderboard
-The leaderboard web app displays the top scoring player on the fictional game of life. It also allows any player to submit their score. 
+The leaderboard web app displays the top scoring player on the fictional game of life. It also allows any player to submit their score. All data is preserved thanks to the external leaderboard API service.
+
+## Preview <hr>
+
+### Desktop Display
+![screenshot](./img/Desktop-Version.png)
+### Mobile Display
+![screenshot](./img/mobile.png)
 
 ## Getting Started
 To get a local copy up and running follow these simple steps.
@@ -22,14 +29,14 @@ To get a local copy up and running follow these simple steps.
 
 ## Built With
 - **HTML/CSS & JS best practices:** Correct use of tags, elements, properties and syntax.
-- **GitHub flow:** Correct use of Branches for deployment and features development.
+- **Git flow:** Correct use of Branches for deployment and features development.
 - **Linters Check:** Local and Pull Request check for errors, bugs and stylistic errors in code.
 - **Webpack:** used as a bundle to compile JavaScript modules.
 
 ## 🌎 Live Demo:
 - [Live Demo Link](https://mujeeb4582.github.io/Leaderboard/dist/)
 
-## Authors 
+## Author
 ### 👤 **Mujeeb ur Rahman**
 
 - GitHub: [@Mujeeb4582](https://github.com/Mujeeb4582)
