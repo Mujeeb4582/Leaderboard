@@ -16,3 +16,7 @@ form.addEventListener('submit', (e) => {
     form.playerScore.value = '';
   }
 });
+
+refreshBtn.addEventListener('click', () => {
+  getScoresList();
+});
