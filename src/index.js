@@ -1,39 +1,22 @@
 import './style.css';
-import poplauteTable from './modules/populateTable.js';
+import { addNewData, getScoresList } from './modules/api.js';
 
-const playerScore = [
-  {
-    name: 'Name',
-    score: 152,
-  },
-  {
-    name: 'Name',
-    score: 100,
-  },
-  {
-    name: 'Name',
-    score: 80,
-  },
-  {
-    name: 'Name',
-    score: 70,
-  },
-  {
-    name: 'Name',
-    score: 80,
-  },
-  {
-    name: 'Name',
-    score: 90,
-  },
-  {
-    name: 'Name',
-    score: 120,
-  },
-  {
-    name: 'Name',
-    score: 52,
-  },
-];
+const form = document.querySelector('#form');
+const refreshBtn = document.querySelector('.refresh');
 
-poplauteTable(playerScore);
+getScoresList();
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const playerName = form.playerName.value.trim();
+  const playerScore = form.playerScore.value;
+  if (playerName && playerScore) {
+    addNewData(playerName, playerScore);
+    form.playerName.value = '';
+    form.playerScore.value = '';
+  }
+});
+
+refreshBtn.addEventListener('click', () => {
+  getScoresList();
+});
