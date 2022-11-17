@@ -88,7 +88,7 @@ main form .addDetails {
 main section .heading-wrapper .refresh:hover,
 main form .addDetails:hover {
   transition: linear 0.1s;
-  transform: scale(0.90);
+  transform: scale(0.9);
   box-shadow: none;
 }
 
