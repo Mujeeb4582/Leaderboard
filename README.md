@@ -3,7 +3,7 @@
 # Leaderboard
 The leaderboard web app displays the top scoring player on the fictional game of life. It also allows any player to submit their score. All data is preserved thanks to the external leaderboard API service.
 
-## Preview <hr>
+## Preview
 
 ### Desktop Display
 ![screenshot](./img/Desktop-Version.png)
