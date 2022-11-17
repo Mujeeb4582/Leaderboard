@@ -1,7 +1,7 @@
 const createTable = (obj, table) => {
   const tr = document.createElement('tr');
   const tdName = document.createElement('td');
-  tdName.innerHTML = obj.name;
+  tdName.innerHTML = obj.user;
   tr.appendChild(tdName);
   const tdScore = document.createElement('td');
   tdScore.innerHTML = obj.score;
