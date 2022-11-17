@@ -197,4 +197,17 @@ footer {
   main section .heading-wrapper h2 {
     font-size: 1.8rem;
   }
+
+  .footerWrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  footer {
+    border: 3px solid #fff;
+    border-radius: 8px;
+    margin: 0 16px;
+    height: 70%;
+    margin-bottom: 10px;
+  }
 }
