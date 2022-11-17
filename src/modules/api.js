@@ -26,3 +26,13 @@ const addNewData = async (pName, pScore) => {
       }, 5000);
     });
 };
+
+const getScoresList = async () => {
+  await fetch(gameUrl)
+    .then((response) => response.json())
+    .then((json) => {
+      poplauteTable(json.result.sort((a, b) => b.score - a.score));
+    });
+};
+
+export { addNewData, getScoresList };
